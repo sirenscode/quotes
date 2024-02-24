@@ -1,1 +1,1 @@
-<h1 class="text-red-500">QUO<strong>TES</strong></h1>
+<h1 style="color:red">QUO<strong>TES</strong></h1>
