@@ -34,7 +34,7 @@ export default function Home() {
     document.getElementById("author")!.style.display="none";
     document.getElementById("card")!.style.padding="0px";
     
-    setTimeout(function(){fetchRandQuote();setIsLoading(true);},200);
+    setTimeout(function(){fetchRandQuote();setIsLoading(true);},500);
   }
     
   console.log(author);
@@ -43,7 +43,7 @@ export default function Home() {
     <main className="bg flex min-h-screen h-[100vh] flex-col bg-[url('/images/download.jpg')] bg-cover bg-center bg-no-repeat ">
       <NavBar/>
       <div className="w-full h-full flex flex-col gap-[20px] text-[#fff] items-center justify-center z-[20]">
-        <div id="card" className="w-[0px] h-fit  rounded-[20px] flex flex-col items-center justify-center gap-[20px] shadow-lg shadow-[#5B2C6F] bg-[#000] p-[20px] opacity-80 ">
+        <div id="card" className="w-[0px] h-fit  rounded-[20px] flex flex-col items-center justify-center gap-[20px] shadow-lg shadow-[#5B2C6F] bg-[#000] opacity-80 ">
           <div className="mt-[auto] flex flex-col gap-[20px]">
             {quote && <h1 id="quote" className="text-[1.5em] w-full text-center font-semilight flex flex-row" style={{fontFamily:'Raleway', fontWeight:"bold"}}><svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 16 16"><path fill="#5B2C6F" d="M6.848 2.47a1 1 0 0 1-.318 1.378A7.284 7.284 0 0 0 3.75 7.01A3 3 0 1 1 1 10v-.027a3.521 3.521 0 0 1 .01-.232c.009-.15.027-.36.062-.618c.07-.513.207-1.22.484-2.014c.552-1.59 1.67-3.555 3.914-4.957a1 1 0 0 1 1.378.318m7 0a1 1 0 0 1-.318 1.378a7.283 7.283 0 0 0-2.78 3.162A3 3 0 1 1 8 10v-.027a3.521 3.521 0 0 1 .01-.232c.009-.15.027-.36.062-.618c.07-.513.207-1.22.484-2.014c.552-1.59 1.67-3.555 3.914-4.957a1 1 0 0 1 1.378.318"/></svg>{quote}</h1>}
             {author && <p id="author" className="text-[1em] font-semibold ml-[auto] pr-[20px]" style={{fontFamily: 'Kode Mono'}}>{author}</p>}
